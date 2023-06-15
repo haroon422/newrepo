@@ -1,0 +1,14 @@
+---
+- name: install maven
+  hosts: jenkins
+  become: true 
+  tasks: 
+   - name: install maven
+     apt: 
+       name: maven
+       state: present  
+
+
+
+
+
